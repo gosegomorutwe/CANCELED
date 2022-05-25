@@ -1,0 +1,87 @@
+*/
+
+/* set global settings */
+body *{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    color: black;
+}
+
+/* set borders for the master page divs */
+div.master:not(#divmaincontainer):not(#divcontainer){
+    border: 5px solid black;
+    margin-bottom: 2px;
+    background-color: white;
+}
+
+/* style div sidebar */
+#divsidebar{
+    width: 100%;
+}
+
+
+
+/* style footer */
+#divfooter{
+    height:30px;
+}
+#divfooter>p{
+    margin: 5px;
+    text-align: center;
+}
+
+/* style master class */
+.master{
+    border-radius: 5px;
+}
+
+
+/*styling html table*/
+/*generic for all tables*/
+table{
+    border-collapse: collapse;
+}
+table,tr,th,td, tfoot{
+    border:1px solid turquoise;
+}
+
+table th{
+    text-transform: uppercase;
+    text-align: left;
+    color: navy;
+}
+/*specific for given tables*/
+#tblmodels>tbody>tr>td:last-child, 
+#tblmodels>tfoot>tr>td:last-child{
+    color:black;
+    font-weight: bold;
+    text-align: right;
+}
+tfoot>tr{background-color: lightcyan;}
+#tblmodels td:nth-last-child(2){
+    color: blue;
+    font-weight: bold;
+}
+#tblmodels td:nth-last-child(3){
+    color: green;
+    font-weight: bold;
+}
+#tblmodels td:nth-last-child(4){
+    color: purple;
+    font-weight:bold;
+    text-transform:uppercase;
+}
+td,th{
+    padding: 20px 20px 15px 10px;
+}
+caption{
+    font-size: 30px;
+    color: navy;
+    font-weight: bold;
+}
+
+td:nth-last-child(2){
+    transform: rotate(15deg);
+}
+
+
